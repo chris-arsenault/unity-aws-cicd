@@ -22,6 +22,7 @@ xvfb curl gconf-service lib32gcc1 lib32stdc++6 libasound2 libc6 libc6-i386 libca
 RUN apt-get install git unzip -qq -y \
         && rm -rf /var/lib/apt/lists/*
 RUN curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+RUN unzip awscli-bundle.zip
 RUN ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
 
 RUN rm -rf /var/lib/apt/lists/*
