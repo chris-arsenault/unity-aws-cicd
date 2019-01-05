@@ -19,6 +19,8 @@ public class BuildScript
             Console.WriteLine(sceneSettings[i].path);
             scenePaths[i] = sceneSettings[i].path;
         }
+        scenePaths[0] = "Assets/Scenes/Miniball.unity";
+        scenePaths[1] = "Assets/Scenes/Miniball";
         BuildPipeline.BuildPlayer(scenePaths, "build/web-gl", BuildTarget.WebGL, BuildOptions.None);
     }
 }
