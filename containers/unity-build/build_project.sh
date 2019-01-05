@@ -7,3 +7,5 @@ xvfb-run --auto-servernum --server-args='-screen 0 640x480x24' \
 		-quit \
 		-logFile \
 		-executeMethod BuildScript.PerformBuild
+
+aws s3 cp build/web-gl s3://unity.chris-arsenault.com/ --recursive --acl public-read --region us-east-1
