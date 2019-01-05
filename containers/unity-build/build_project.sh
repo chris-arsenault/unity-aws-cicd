@@ -1,3 +1,5 @@
+#! /bin/bash
+
 aws s3 cp s3://chris-arsenault-credentials/unity-license /root/.local/share/unity3d/Unity/Unity_lic.ulf
 git clone https://github.com/chris-arsenault/unity-aws-cicd
 cd unity-aws-cicd
