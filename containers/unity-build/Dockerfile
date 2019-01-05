@@ -30,4 +30,4 @@ WORKDIR /root
 RUN cd /root
 COPY Unity_v2018.x.ulf /root/.local/share/unity3d/Unity/Unity_lic.ulf
 
-COPY build_project.sh
+COPY build_project.sh .
