@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             count++;
-            if (count >= 4)
+            if (count >= 8)
             {
                 countText.enabled = false;
                 winText.enabled = true;
