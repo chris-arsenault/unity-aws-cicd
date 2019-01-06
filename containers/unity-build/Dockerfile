@@ -29,6 +29,6 @@ RUN rm -rf /var/lib/apt/lists/*
 
 WORKDIR /root
 RUN cd /root
-COPY Unity_v2018.x.ulf /root/.local/share/unity3d/Unity/Unity_lic.ulf
 
 COPY build_project.sh .
+ENTRYPOINT ["sh", "-c", "/root/build_project.sh"]
